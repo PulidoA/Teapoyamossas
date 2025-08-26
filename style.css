@@ -1,22 +1,22 @@
-/* Estilos propios (complementan las clases utilitarias del framework) */
-
-/* Tipografía y ajustes generales */
+/* Estilos adicionales */
 :root {
   --brand-dark: #0A3D62;
 }
 
+body {
+  line-height: 1.6;
+}
+
 h2 {
   color: var(--brand-dark);
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-table {
-  margin-top: 0.5rem;
+h3 {
+  margin-top: 1rem;
+  color: #15517a;
 }
 
-/* Mejora de legibilidad en móviles */
-@media (max-width: 576px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
+ul {
+  margin-bottom: 1rem;
 }

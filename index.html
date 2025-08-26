@@ -2,15 +2,12 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Te Apoyamos S.A.S.</title>
-
-  <!-- Hoja de estilos del framework (CDN) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-  <!-- Estilos propios -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Framework CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -18,101 +15,74 @@
   <header class="bg-primary text-white text-center p-3">
     <h1 class="m-0">Te Apoyamos S.A.S.</h1>
     <nav class="nav justify-content-center mt-2">
-      <a class="nav-link text-white" href="#nosotros">Nosotros</a>
-      <a class="nav-link text-white" href="#servicios">Servicios</a>
-      <a class="nav-link text-white" href="#profesionales">Profesionales</a>
-      <a class="nav-link text-white" href="#procesos">Procesos</a>
-      <a class="nav-link text-white" href="#contacto">Contacto</a>
+      <a class="nav-link text-white" href="#paso4">Paso 4 - Análisis</a>
+      <a class="nav-link text-white" href="#paso5">Paso 5 - Investigación</a>
     </nav>
   </header>
 
-  <!-- Contenido principal -->
+  <!-- Contenido -->
   <main class="container my-4">
-    <!-- PASO 4: Información institucional (quiénes somos + actores) -->
-    <section id="nosotros" class="mb-4">
-      <h2>Quiénes somos</h2>
-      <p>
-        Somos una firma de abogados con trayectoria nacional, dedicada a la asesoría legal en diferentes áreas del
-        derecho.
-        Nuestro objetivo es ampliar la cobertura de servicios y ofrecer soluciones digitales seguras y eficientes.
-      </p>
-      <p class="text-muted">
-        <strong>Actores principales:</strong> clientes, profesionales aspirantes, abogados internos, administrador del
-        sistema y visitantes.
-      </p>
-    </section>
 
-    <!-- PASO 4: Servicios -->
-    <section id="servicios" class="mb-4">
-      <h2>Servicios</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Asesoría legal empresarial</li>
-        <li class="list-group-item">Gestión de procesos judiciales</li>
-        <li class="list-group-item">Consultoría en derecho laboral</li>
-        <li class="list-group-item">Consultoría en derecho comercial</li>
-        <li class="list-group-item">Publicación de noticias legales</li>
+    <!-- Paso 4 -->
+    <section id="paso4" class="mb-5">
+      <h2>Análisis de requerimientos</h2>
+      <h3>Requerimientos de la solución web</h3>
+      <ul>
+        <li>Presentación institucional: información de la firma, trayectoria, servicios, noticias legales,
+          reconocimientos y alianzas.</li>
+        <li>Gestión de profesionales: registro y evaluación de hojas de vida.</li>
+        <li>Gestión de procesos legales: registro de clientes, tipo de proceso y avances del caso.</li>
+        <li>Acceso público: información general, servicios y contacto.</li>
+        <li>Acceso privado: registro de hojas de vida y gestión de procesos con autenticación.</li>
+        <li>Seguridad y respaldo: protección de datos, confidencialidad y copias de seguridad.</li>
+        <li>Usabilidad y accesibilidad: diseño responsive e interfaz amigable.</li>
+      </ul>
+
+      <h3>Actores involucrados</h3>
+      <ul>
+        <li>Clientes: consultan información, servicios y noticias legales.</li>
+        <li>Profesionales externos: registran su hoja de vida.</li>
+        <li>Abogados: gestionan procesos y actualizan avances.</li>
+        <li>Administrador del sistema: gestiona usuarios y seguridad.</li>
+        <li>Visitantes: acceden a la información institucional.</li>
+      </ul>
+
+      <h3>Información para registrar</h3>
+      <ul>
+        <li>De la firma: misión, visión, trayectoria, servicios, noticias, reconocimientos, alianzas, datos de contacto.
+        </li>
+        <li>De profesionales externos: nombre, identificación, formación, experiencia y hoja de vida.</li>
+        <li>De clientes: datos de contacto, tipo de proceso, estado y avances.</li>
+        <li>De usuarios internos: credenciales, roles y actividades.</li>
+        <li>De procesos: descripción, abogado responsable, cronología y resultados.</li>
       </ul>
     </section>
 
-    <!-- PASO 4: Registro de profesionales (formulario) -->
-    <section id="profesionales" class="mb-4">
-      <h2>Registro de Profesionales</h2>
-      <form class="row g-3" action="#" method="post">
-        <div class="col-md-6">
-          <label for="nombre" class="form-label">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" class="form-control" required />
-        </div>
-        <div class="col-md-6">
-          <label for="correo" class="form-label">Correo electrónico</label>
-          <input id="correo" name="correo" type="email" class="form-control" required />
-        </div>
-        <div class="col-12">
-          <label for="experiencia" class="form-label">Experiencia</label>
-          <textarea id="experiencia" name="experiencia" rows="4" class="form-control"
-            placeholder="Resumen de experiencia, estudios, áreas..."></textarea>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+    <!-- Paso 5 -->
+    <section id="paso5" class="mb-5">
+      <h2>Investigación de frameworks</h2>
+      <p>Los frameworks y herramientas para el desarrollo de páginas web facilitan la usabilidad, el diseño adaptable y
+        la construcción rápida de interfaces. Algunos ejemplos son:</p>
+      <ul>
+        <li><strong>Bootstrap:</strong> sistema de rejilla responsivo y componentes listos.</li>
+        <li><strong>Tailwind CSS:</strong> clases utilitarias para personalización y diseño moderno.</li>
+        <li><strong>Materialize:</strong> basado en Material Design, con formularios y navegación amigables.</li>
+        <li><strong>React:</strong> librería de JavaScript para construir interfaces dinámicas por componentes.</li>
+        <li><strong>Angular:</strong> framework completo para aplicaciones web escalables.</li>
+      </ul>
+      <p>Estos frameworks permiten optimizar el desarrollo, asegurar accesibilidad y garantizar un diseño responsivo en
+        diferentes dispositivos.</p>
     </section>
 
-    <!-- PASO 4: Procesos legales (ejemplo de estructura de datos) -->
-    <section id="procesos" class="mb-4">
-      <h2>Procesos Legales</h2>
-      <p class="text-muted">Ejemplo de información a registrar sobre clientes y procesos:</p>
-      <div class="table-responsive">
-        <table class="table table-bordered align-middle">
-          <thead class="table-light">
-            <tr>
-              <th>Cliente</th>
-              <th>Tipo de Proceso</th>
-              <th>Estado</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Juan Pérez</td>
-              <td>Laboral</td>
-              <td><span class="badge bg-warning text-dark">En curso</span></td>
-            </tr>
-            <tr>
-              <td>María López</td>
-              <td>Comercial</td>
-              <td><span class="badge bg-success">Finalizado</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
   </main>
 
   <!-- Pie de página -->
-  <footer id="contacto" class="bg-primary text-white text-center p-3">
-    <p class="m-0">© 2025 Te Apoyamos S.A.S. · Contacto: <a class="text-white text-decoration-underline"
-        href="mailto:info@teapoyamos.com">info@teapoyamos.com</a></p>
+  <footer class="bg-primary text-white text-center p-3">
+    <p class="m-0">Hecho por Yuli Alexandra Pulido Castañeda</p>
   </footer>
 
+  <!-- JS opcional -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
